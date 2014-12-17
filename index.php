@@ -7,11 +7,15 @@ and open the template in the editor.
 <html>
     <head>
         <meta charset="UTF-8">
-        <title></title>
+        <title>Music</title>
     </head>
     <body>
         <?php
         // put your code here
+        echo "Sridhar";
+        ?>
+         <?php
+            include_once './libs.php';
         ?>
     </body>
 </html>
