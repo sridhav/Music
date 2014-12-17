@@ -1,21 +1,19 @@
-<!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Music</title>
-    </head>
-    <body>
-        <?php
-        // put your code here
-        echo "Sridhar";
-        ?>
-         <?php
-            include_once './libs.php';
-        ?>
-    </body>
-</html>
+<?php
+
+include 'Router.php';
+
+
+var_dump($_SERVER['REQUEST_URI']);
+var_dump($_GET['val']);
+$route=new Router();
+
+$route->add('/',function(){
+    echo "Hello World";
+});
+
+$route->add('/about',function(){
+    echo "Hello about";
+});
+
+
+$route->run();
